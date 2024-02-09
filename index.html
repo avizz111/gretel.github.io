@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="icon/png" href="icono.png">
+    <script>
+        var alto = 20;
+        var largo = 50;
+        
+        const crecer = () =>{
+            alto = alto *2;
+            largo = largo*2;
+            si.style=`height: ${alto}px;width: ${largo}px`
+        }
+    </script>
+</head>
+<body id="cuerpo">
+    <header>
+        <h1 id="cabeza">Me gustas</h1>
+        <img src="secreto-removebg-preview.png" alt="❤" id="fondo" width="200px">
+    </header>
+    <main>
+        <button id="si" onclick="fondo.src='R.png';cabeza.innerText='Gracias, te amo';no.remove();si.remove()" style="height: 20px;width: 50px;">
+            Si
+        </button>
+        <button id="no" onclick="no.innerText='¿Segura?';no.style='width:100px;';fondo.src='triste.png';crecer()" style="width: 50px;">
+            No
+        </button>
+    </main>
+</body>
+</html>
